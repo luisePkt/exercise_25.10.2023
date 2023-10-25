@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* EXAMPLE-1: box-sizing */
+/* Box-sizing: border-box => padding and border are included with width and height */
+
+/* box-sizing => width = border + padding + width */
+/* box-sizing => height = border + padding + height */
+
+.box {
+  border: 2px solid black;
+  width: 300px;
+  height: 100px;
+  padding: 30px;
+}
+
+/* EXAMPLE-2 */
+/* padding and margin verbunden durch einen "Mittelstrich -"  */
+.padd-marg {
+  border: 5px solid red;
+  background-color: bisque;
+  /* margin: 50px; */
+  /* margin-top: 30px; */
+  /* margin-right: 70px; */
+  /* margin-bottom: 30px; */
+  /* margin-left: 30px; */
+  /* padding: 50px; */
+  /* padding-top: 50px; */
+  /* padding-bottom: 50px; */
+  /* padding-left: 50px; */
+  /* padding-right: 50px; */
+
+  /* With ONE value => top right bottom left = 20px */
+  padding: 20px;
+
+  /* With FOUR Values => top right bottom left */
+  padding: 10px 20px 30px 2px;
+
+  /* top-bottom = 20px / right-left = 35px */
+  padding: 20px 35px;
+
+  /* top = 20px / right-left = 5px / bottom = 16px  */
+  padding: 20px 5px 16px;
+}
+
+/* EXAMPLE-3 */
+/* block - inline - inline-block */
+/* block => take up the full width available */
+/* inline-block => are like inline but you can use width height margin and padding */
+/* inline => take up as much width as necessary (so viel Breite wie nötig) */
+/* inline => width and height doesn't work */
+/* inline => padding-left and right => no problem, it works */
+/* inline => padding-top and bottom => make our Website ugly (don't use)*/
+/* inline => margin-right and left => no problem, it works */
+/* inline => margin-top and bottom doesn't work */
+
+a {
+  background-color: red;
+  width: 100px;
+  height: 200px;
+  padding-left: 100px;
+  /* padding-top: 100px; */
+  margin-left: 50px;
+  /* margin-top: 200px; */
+  display: inline-block;
+}
+/* <img/> => inline replaced => inline-block */
